@@ -1,4 +1,5 @@
-/*
+/*Apellido: Ledesma
+Nombre: Leonel
 Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resulto por medio de "ALERT"
@@ -15,12 +16,15 @@ function sumar() {
 	operador = "La suma es: ";
 
 
-	numeroUno = parseInt(txtIdNumeroUno.value);
-	numeroDos = parseInt(txtIdNumeroDos.value);
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
 
-	resultado = (numeroUno+numeroDos);
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
 
-	alert(operador+resultado)
+	resultado = numeroUno+numeroDos;
+
+	alert(operador+resultado);
 
 
 }
@@ -36,12 +40,16 @@ function restar() {
 	operador = "La resta es: ";
 
 
-	numeroUno = parseInt(txtIdNumeroUno.value);
-	numeroDos = parseInt(txtIdNumeroDos.value);
+
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
+
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
 
 	resultado = (numeroUno-numeroDos);
 
-	alert(operador+resultado)
+	alert(operador+resultado);
 }
 
 function multiplicar() {
@@ -55,12 +63,16 @@ function multiplicar() {
 	operador = "La multiplicación es: ";
 
 
-	numeroUno = parseInt(txtIdNumeroUno.value);
-	numeroDos = parseInt(txtIdNumeroDos.value);
+
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
+
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
 
 	resultado = (numeroUno*numeroDos);
 
-	alert(operador+resultado)
+	alert(operador+resultado);
 }
 
 function dividir() {
@@ -73,13 +85,14 @@ function dividir() {
 	
 	operador = "La división es: ";
 
+	numeroUno = document.getElementById("txtIdNumeroUno").value;
+	numeroUno = parseInt(numeroUno);
 
-	numeroUno = parseInt(txtIdNumeroUno.value);
-	numeroDos = parseInt(txtIdNumeroDos.value);
-
+	numeroDos = document.getElementById("txtIdNumeroDos").value;
+	numeroDos = parseInt(numeroDos);
 	resultado = (numeroUno/numeroDos);
 
-	alert(operador+resultado)
+	alert(operador+resultado);
 }
 
 
