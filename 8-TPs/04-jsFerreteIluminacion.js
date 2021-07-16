@@ -1,4 +1,7 @@
-/*4.	Para el departamento de iluminación:
+/*4.	
+Apellido: Ledesma
+Nombre: Leonel
+Para el departamento de iluminación:
 Tomando en cuenta que todas las lámparas están en oferta al mismo precio de $35 pesos final.
 A.	Si compra 6 o más  lamparitas bajo consumo tiene un descuento del 50%. 
 B.	Si compra 5  lamparitas bajo consumo marca "ArgentinaLuz" se hace un descuento del 40 % y si es de otra marca el descuento es del 30%.
@@ -10,5 +13,87 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	var cantidad;
+    var precio;
+    var precioCantidad;
+    var marca;
+    var impuesto;
+       
+    precio = 35;
+
+    cantidad = document.getElementById("txtIdCantidad").value;
+    cantidad = parseInt(cantidad);
+    marca = document.getElementById("Marca").value;
+    
+    precioCantidad = (cantidad*precio);
+
+      
+        
+    //a
+    if(cantidad >5)
+    {
+        porcentaje = 50
+    }
+    else //b
+    {
+        if(cantidad==5)
+        {
+            if(marca=="ArgentinaLuz")
+            {
+                porcentaje = 40;
+            }
+            else
+            {
+                porcentaje = 30;
+            }
+        }
+        else //c
+        {
+            if(cantidad==4)
+            {
+                    if(marca=="ArgentinaLuz" || marca=="FelipeLamparas")
+                    {
+                        porcentaje = 25;
+                    }
+                    else
+                    {
+                        porcentaje = 20;
+                    }
+            }
+            else //d
+            {
+                if(cantidad==3)
+                {
+                    if(marca=="ArgentinaLuz")
+                    {
+                        porcentaje = 15;
+                    }
+                    else
+                    {
+                        if(marca=="FelipeLamparas")
+                        {
+                        porcentaje = 10;
+                        }
+                        else
+                        {
+                            porcentaje = 5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+descuento = precioCantidad * porcentaje/100;
+preciofinal = precioCantidad - descuento;
+
+document.getElementById("txtIdprecioDescuento").value = preciofinal;
+
+if(preciofinal>120) //e
+{
+    impuesto = preciofinal * 10/100;
+    preciofinal = preciofinal+impuesto
+    alert("Usted pago " + impuesto + " de IIBB.");
+}
+
 }
