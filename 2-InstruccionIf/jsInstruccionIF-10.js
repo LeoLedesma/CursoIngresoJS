@@ -1,12 +1,12 @@
-/* Apellido: Ledesma
+Apellido: Ledesma
 Nombre: Leonel
 
-Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
+/*Al presionar el Botón, asignar una nota RANDOM al examen y mostrar:
 "EXCELENTE" para notas igual a 9 o 10,
 "APROBÓ" para notas mayores a 4,
 "Vamos, la proxima se puede" para notas menores a 4 */
 
-
+/*
 function mostrar()
 {
 	var numero;
@@ -30,4 +30,13 @@ function mostrar()
 		alert("Vamos, la proxima se puede")
 	}
 
-}//FIN DE LA FUNCIÓN
+}//FIN DE LA FUNCIÓN*/
+
+function mostrar()
+{
+	//Es excelente si la nota es 9 o 10
+
+	//Es aprobo si la nota es mayor a 4
+
+	//vamos si la nota es menor a 4
+}
