@@ -72,7 +72,7 @@ function CalcularPrecio ()
                     {
                         if(marca=="FelipeLamparas")
                         {
-                        porcentaje = 10;
+                            porcentaje = 10;
                         }
                         else
                         {
