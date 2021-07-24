@@ -11,6 +11,8 @@ function mostrar()
 	while(numeroIngresado<0 || numeroIngresado>9)
 	{
 		numeroIngresado = prompt("El numero no esta dentro de los números pedidos, intente nuevamente");
+		numeroIngresado = parseInt(numeroIngresado);
+		
 	}
 	document.getElementById("txtIdNumero").value = numeroIngresado;
 	

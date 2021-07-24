@@ -5,6 +5,22 @@ con números ASCENDENTE, desde el 1 al 10.*/
 
 //
 
+do {
+	
+} while (asd);
+
+
+
+
+do {
+	
+estructura blabla//ejecuta
+
+} while (condition);//si se cumnple vuelve al do. ¡¡se pone!!;
+
+
+
+
 function mostrar()
 {
 

@@ -29,22 +29,16 @@ switch(horaIngresada)
         mensajeEsDe = "Es de tarde. ";
         break;
     default:
-        mensajeEsDe= "Es de noche"
-        if(horaIngresada<25)
+        mensajeEsDe= "Es de noche. A dormir"
+        if(isNaN(horaIngresada) || horaIngresada >24 || horaIngresada<0)
         {
-            mensajeEsDe = "Es de noche. ";
-            mensajeA = "A dormir.";
-        }
-        else
-        {
-            mensajeEsDe = "La hora no es valida. ";
-            
+            mensajeEsDe = "La hora no es valida. "
         }
         break;
 
 }
 
-alert(mensajeEsDe+mensajeA);
+alert(mensajeEsDe);
 }
 
 
@@ -89,4 +83,4 @@ switch(mensaje)
 }
 
 */
-}
+
